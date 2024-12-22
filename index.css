@@ -1,5 +1,6 @@
 html{
     margin: 0;
+    padding: 0;
     background-color: var(--light-green);
 }
 
@@ -32,4 +33,32 @@ a{
 
 a:hover, a:visited{
     color: var(--dark-pink);
+}
+
+/* Home Section */
+#home{
+    margin: 0 2rem 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 7em;
+}
+
+#home button{
+    padding: 1.5rem;
+    font-size: 4.8em;
+    border-radius: 20%;
+    background-color: var(--light-pink);
+    color: white;
+    border-color: white;
+}
+
+#home button:hover{
+    background-color: var(--dark-pink);
+    color: var(--light-pink);
+    border-color: var(--dark-pink);
 }
