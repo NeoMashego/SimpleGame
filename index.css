@@ -18,30 +18,32 @@ nav{
     padding: 0.5rem;
     font-size: 1.4em;
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
-nav ul li{
+.navList{
     list-style-type: none;
+    display: flex;
 }
 
-a{
+.navList a{
     text-decoration: none;
     color: black;
+    padding-right: 1em;
 }
 
-a:hover, a:visited{
+.navList a:hover, .navList a:visited{
     color: var(--dark-pink);
 }
 
 /* Home Section */
 #home{
-    margin: 0 2rem 0 2rem;
+    margin: 0 2rem 5rem 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 4rem 2rem 4rem 2rem;
 }
 
 .title{
@@ -61,4 +63,27 @@ a:hover, a:visited{
     background-color: var(--dark-pink);
     color: var(--light-pink);
     border-color: var(--dark-pink);
+}
+
+/* Contact Section */
+footer{
+    background-color: var(--dark-green);
+    font-size: 2.6em;
+    padding: 4rem 0 2rem 0;
+}
+
+.footList{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footList a{
+    text-decoration: none;
+    color: black;
+    padding-right: 2em;
+}
+
+.footList a:hover{
+    color: var(--dark-pink);
 }
