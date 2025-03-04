@@ -22,24 +22,42 @@ body {
 }
 
 nav {
-  font-weight: 500;
-  color: var(--dark-pink);
-  padding: 1.3rem 1rem;
   background-color: var(--dark-green);
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
 }
 
 nav a {
   text-decoration: none;
-  padding: 1em;
+  color: var(--dark-pink);
+  font-weight: 600;
+  font-size: large;
+  font-weight: 500;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+a:hover, a.focus {
+  color: var(--light-pink);
+  text-decoration: none;
+  border: 0.2rem solid var(--light-pink);
+}
+
+a.active-link {
+  color: var(--light-green);
+}
+
+button {
+  padding: 0.9rem 1.2rem;
+  margin: 0.3rem;
+  border-radius: 20%;
+  border-color: var(--dark-pink);
+  background-color: var(--light-pink);
+  color: white;
   font-weight: 600;
   font-size: large;
 }
-
-a:hover, a.active-link {
-  color: var(--light-pink);
-  text-decoration: underline;
-}
-
 
 /*@media (prefers-color-scheme: light) {
   :root {

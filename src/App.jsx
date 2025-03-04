@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom"
+import Home from './assets/Home.jsx'
 import './App.css'
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
             <NavLink to="/contact" className={({isActive}) => isActive ? "active-link" : null} >Contact</NavLink>
         </nav>
         <Routes>
-            <Route />
+            <Route path="/" element={<Home />} />
         </Routes>
         </BrowserRouter>
     )
